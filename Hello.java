@@ -255,10 +255,29 @@ class Hello {
         String name2 = "Imisioluwa";
 
         System.out.println(" Hello " + name );
-        System.out.println(name2);
+        System.out.println(name2.charAt(3));
+        System.out.println(name.codePointAt(3));
+        System.out.println(name.codePointBefore(3));
+        System.out.println(name2.compareTo(name));
+        System.out.println(name.compareToIgnoreCase("Yes"));
+        System.out.println(name.concat(" is a girl"));
+        System.out.println(name.contains("Ro"));
+        System.out.println(name.contentEquals(name2));
+        System.out.println(name.endsWith("s"));
+        System.out.println(name.equals(name2));
+        System.out.println(name2.hashCode());
+        System.out.println(name2.indexOf("o"));
+        System.out.println(name2.isBlank());
+       
         
-        
-        
+        StringBuffer sb = new StringBuffer("Rose Marvelous");
+
+        System.out.println(sb.capacity());
+        System.out.println(sb.charAt(9));
+        System.out.println(sb.length());
+        System.out.println(sb.substring(3, 9));
+        System.out.println(sb.append(2.555f));
+
 
     }
 
