@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-dim": "#005862",
+              "on-tertiary-fixed-variant": "#634900",
+              "tertiary-dim": "#674b00",
+              "on-tertiary-fixed": "#402d00",
+              "on-surface-variant": "#9720ab",
+              "primary-fixed": "#ff7290",
+              "tertiary": "#765600",
+              "on-secondary-container": "#00515b",
+              "surface-dim": "#fdc0ff",
+              "inverse-on-surface": "#e36cf4",
+              "on-background": "#540063",
+              "surface-bright": "#fff3fa",
+              "on-tertiary": "#fff1db",
+              "error-container": "#fb5151",
+              "primary": "#b70049",
+              "outline-variant": "#f182ff",
+              "surface-container-high": "#ffd6fe",
+              "surface-variant": "#ffcdff",
+              "on-primary-fixed-variant": "#5f0022",
+              "on-secondary-fixed": "#003c44",
+              "secondary-fixed": "#58e7fb",
+              "on-primary-container": "#4d001a",
+              "secondary": "#006571",
+              "on-surface": "#540063",
+              "on-secondary-fixed-variant": "#005b66",
+              "surface-tint": "#b70049",
+              "on-secondary": "#d7f9ff",
+              "error-dim": "#9f0519",
+              "outline": "#b743c9",
+              "background": "#fff3fa",
+              "on-primary": "#ffeff0",
+              "surface-container-low": "#ffebfb",
+              "tertiary-container": "#fec330",
+              "surface": "#fff3fa",
+              "surface-container": "#ffdefd",
+              "on-tertiary-container": "#584000",
+              "error": "#b31b25",
+              "tertiary-fixed-dim": "#efb520",
+              "on-error-container": "#570008",
+              "tertiary-fixed": "#fec330",
+              "on-error": "#ffefee",
+              "surface-container-highest": "#ffcdff",
+              "secondary-fixed-dim": "#45d8ed",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#ff5580",
+              "inverse-primary": "#ff4e7c",
+              "primary-container": "#ff7290",
+              "on-primary-fixed": "#000000",
+              "secondary-container": "#58e7fb",
+              "inverse-surface": "#200026",
+              "primary-dim": "#a1003f"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bubbly-mask {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 40%;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl docked full-width top-0 sticky z-50 shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<img alt="Amery Party Packs Logo" class="h-10 w-auto" data-alt="Playful bubbly typography logo for Amery Party Packs in vibrant pink and purple tones on a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBKDOh9vrTNTPPBoCze243EmHbSQ4qzoH909WPGPxlW_mjuvBkoSd-e8d5m139rl4Yt-DGW5SPWSA5rH9NaEAXSvho8uBuEkNjr4uZcT5Wvs4JQFec6mmLfMRDN-JUwY348CdN4y4dv1_D2RJ2IX5Va-Rp000EuR4dZOVDzUbim9Jc0VvZuEsW1RzS8mqtsJfwp6BMhyjvMaNtUO7qmDwuTAVFx47ht6cmAOT5otXkh7Hh9RqjnMlBIzFII67IbWluOQ7yK_f-p2c"/>
+<span class="text-2xl font-black text-pink-600 dark:text-pink-400 tracking-tighter">Amery Party Packs</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-300 hover:text-pink-500 transition-colors font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-pink-500 transition-colors font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight" href="#">Soft Play</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-pink-500 transition-colors font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight" href="#">Party Packs</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-pink-500 transition-colors font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight" href="#">Rentals</a>
+<a class="text-pink-600 dark:text-pink-400 border-b-4 border-pink-500 pb-1 font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-pink-500 transition-colors font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-all Active:scale-95 duration-150 ease-in-out">
+                Book Now
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section: The Curated Playground Vision -->
+<section class="relative px-6 py-20 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 space-y-8 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold tracking-widest uppercase">Our Story</span>
+<h1 class="text-5xl md:text-7xl font-black text-on-surface leading-[1.1] tracking-tighter">
+                        Curating <span class="text-primary italic">Magical</span> Moments for Families.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface/80 leading-relaxed max-w-lg">
+                        We don't just rent party gear; we curate high-end, joy-filled playgrounds where memories are made and imaginations run wild.
+                    </p>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-tertiary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+<div class="absolute -bottom-10 -right-10 w-72 h-72 bg-secondary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+<div class="relative z-10 bubbly-mask overflow-hidden aspect-square shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="vibrant children's birthday party setup with pastel balloons, high-end wooden toys, and soft play equipment in a bright sunlit room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvSnvsBNr7zSitDRMQeGKshLqZDWs4xdNh0Okh-AQQUtFDktaRqHy0vVmHqjD1uDAhFDrw-xUZWlkEzYpM4aMMBPqbemgOPqciSqM80beoZJMUMdYsBwh7ehUefuE3bTUQUNyS-lk85pwCG4eN1Ns1tFjlk1_u0jq9VvR2jHjs4dWtHyg3aTq9SModLzySQOxidwsPyPYssnVQC_tndTiwaelRKJqxLlZeeM5EBA6yUlUX8osO59sMVINMr4bktCn--YXCEgxZnHM"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & The Amery Standard (Bento Grid) -->
+<section class="px-6 py-20 bg-surface-container-low rounded-t-[5rem]">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-4xl font-black tracking-tight mb-4">The Amery Standard</h2>
+<p class="text-on-surface/70 font-medium">Why parents choose our curated experiences</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Mission Card -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between shadow-sm border border-outline-variant/10">
+<div class="space-y-6">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-3xl">auto_awesome</span>
+</div>
+<h3 class="text-3xl font-bold tracking-tight">Our Mission</h3>
+<p class="text-lg leading-relaxed text-on-surface/80">
+                                To provide an <span class="text-primary font-bold italic">affordable luxury</span> experience for families. We believe every parent deserves stress-free magic and every child deserves a playground that is as beautiful as it is fun.
+                            </p>
+</div>
+<div class="mt-12 flex gap-4">
+<span class="px-4 py-2 rounded-full bg-secondary-container/30 text-secondary-dim font-bold text-sm">#AffordableLuxury</span>
+<span class="px-4 py-2 rounded-full bg-tertiary-container/30 text-on-tertiary-fixed-variant font-bold text-sm">#StressFreeMagic</span>
+</div>
+</div>
+<!-- Quality Card -->
+<div class="bg-tertiary-container p-10 rounded-xl flex flex-col items-center text-center justify-center space-y-4">
+<span class="material-symbols-outlined text-6xl text-on-tertiary-container">verified</span>
+<h3 class="text-2xl font-black text-on-tertiary-container">Premium Materials</h3>
+<p class="text-on-tertiary-container/80">Only the highest-grade, non-toxic materials for your little ones.</p>
+</div>
+<!-- Aesthetic Card -->
+<div class="bg-secondary-container p-10 rounded-xl flex flex-col justify-end space-y-4 group overflow-hidden relative">
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/20 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
+<span class="material-symbols-outlined text-4xl text-on-secondary-container">palette</span>
+<h3 class="text-2xl font-black text-on-secondary-container">Aesthetic Perfection</h3>
+<p class="text-on-secondary-container/80">Our packs are designed to look stunning in your photos and your home.</p>
+</div>
+<!-- Safety Card -->
+<div class="md:col-span-2 bg-on-background p-10 rounded-xl flex items-center gap-8 text-surface-container-lowest">
+<div class="hidden md:block w-1/3 rounded-lg overflow-hidden h-full">
+<img class="h-full w-full object-cover grayscale opacity-50" data-alt="close up of meticulously cleaned and organized children's play blocks in a professional storage unit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2LgwAOBVmoYQ-pSqhnwf_LeVxEF7-walXtHfduohwwYMjf1ztBO4BCdlFSUhHoHkXd_WyL2KaCzi_Lomq9gHHv28-BB2RCVvlSfm-SiCU8B4Pf7-3Rs7Ku5NOO16Yk6FH7IJT7lxethCW8NJC9wxXPgboCyCeut2rvNcU5TK6CjV5HpqcxgNfraBhQnJsLMSxRnE19g5jReSDH9TW5LcnpI6rwVL6Zema_s9ghUgOwAf6UsjO_xO5BWZRlK4S2Ga2qagUGZesi3U"/>
+</div>
+<div class="md:w-2/3 space-y-4">
+<h3 class="text-3xl font-bold tracking-tight text-secondary-fixed">Sanitized &amp; Certified</h3>
+<p class="text-lg opacity-80">
+                                Every piece of equipment undergoes a rigorous multi-stage sanitization process using eco-friendly, hospital-grade cleaners before it ever reaches your door.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Story: Organic Asymmetry -->
+<section class="px-6 py-24 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto relative">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 relative order-2 md:order-1">
+<!-- Decorative Bubbly Elements -->
+<div class="absolute -z-10 top-0 left-0 w-full h-full border-4 border-dashed border-primary/20 rounded-[4rem] rotate-3"></div>
+<div class="rounded-[4rem] overflow-hidden shadow-2xl relative">
+<img class="w-full h-[600px] object-cover" data-alt="Portrait of a smiling professional woman in her 30s standing in a modern, brightly lit office with colorful design accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXww1RDy-9gng3-321AdD9SPnHtc27Zy1HgIZICjvgd9xdspTUCdRe-fJxckU7YZ7_XOX8U6a9ZbwYZQeRBNM0j6OIw5PXfTnOHMrB-juK4PlC0fTavQQ9Ug-YfHCwLPcvKnTHKtXyXZDSbU_zgye0GzE4Wzqr0wpSN1gUNwH0imGrS4lb2OrJ0S1oLhZDkIxxDKCBMTNDR7aUsezSv5lhBg6PrKLXTbRhb-7yY53MF9RPCjnrzMkfQNjzchhE5dfuhiXuoDzhzXw"/>
+<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-12 text-white">
+<p class="text-2xl font-bold italic">"I wanted to create the kind of party I couldn't find—one that was beautiful, safe, and truly stress-free."</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-8 order-1 md:order-2">
+<h2 class="text-4xl md:text-5xl font-black tracking-tighter">Meet Our Founder</h2>
+<div class="space-y-6 text-on-surface/80 text-lg leading-relaxed">
+<p>
+                                Hi, I'm <span class="text-primary font-bold">Sarah Amery</span>. As a mother of three, I spent years navigating the chaotic world of children's birthday parties. I found myself choosing between "cheap and plastic" or "overwhelmingly DIY."
+                            </p>
+<p>
+                                I started Amery Party Packs with a single mission: to provide parents with a <span class="text-primary font-bold italic">curated, affordable luxury</span> alternative. I believe you shouldn't have to break the bank to give your children a magical experience.
+                            </p>
+<p>
+                                My goal is to take the stress out of planning while keeping the magic alive. We handle the aesthetics and the safety, so you can focus on making memories with your little ones.
+                            </p>
+<p>
+                                Today, we are a small but mighty team of party enthusiasts, designers, and safety experts dedicated to delivering the 'Amery Standard' of <span class="text-primary font-bold">stress-free magic</span> to every doorstep in the city.
+                            </p>
+</div>
+<div class="pt-8">
+<img alt="Sarah Amery Signature" class="h-16 opacity-70" data-alt="Elegant handwritten script signature in dark ink on a transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnUtQWo1HUlk2n8zDhh6us8S0eRPLJMgVxbZqEKbUuogCWRV5TUmUDXOGvQ3NRpNRjMHkaHssaG_8qdc4dhArhhIgUu8aOvkJ-WHM1_AOuFef6SK3g8Zt1tmGd2QqiWhC7u_bIo1tl4WStkHdgUqgALb7rhds0JKMmiVEiYktn8OGmO1Ou9iSM4hiD7Z21PNXp6XZzk8SAwxCOs5FHF58Ieqzj8OZw6dXxYL98nTqVhXgQbmHpBa6kx_dutoYE1QquHSc6TsCCdCE"/>
+<p class="font-bold mt-2">Sarah Amery, Founder &amp; CEO</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Introduction -->
+<section class="px-6 py-20 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+<div class="max-w-xl">
+<h2 class="text-4xl font-black tracking-tight mb-4">The Joy Makers</h2>
+<p class="text-on-surface/70 text-lg">Meet the team behind the curation. We’re passionate about play and experts in fun.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        Join Our Team <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Headshot of a friendly man in his late 20s with short dark hair, wearing a casual denim shirt against a soft blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrQeV03VGezGWQALi8ek5R3l_TcBwvUpP6c8D0DJt3RYZK95oTz7vpF44bMe5UXRZFVM1soQ85wRA7p59toPTBWl0YLjykqNHXkjs8EjJ8eoVOIE3xXwV8W8Ye9KV1aRAwoulrZQQuU3m5srO6GDZp2yksOj4ZX4w3g_2sHlvZ67JZC9WAWbKgaubqJ0AdiN3-ukuHQ25v_9QlJeVvbAMqiAtsEVvH4NtnvAeQ5FdvVHKWcyhKrFxL8g6xvtvcOKCWc3h5MfZug-0"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-xl font-bold">David Chen</h4>
+<p class="text-on-surface/60 font-medium">Head of Curation</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional headshot of a woman with curly hair and a warm smile, wearing a mustard yellow blazer in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASMAbqTFcyqcJJFxrFE6y7_1nfhTxLtYC8TZBrkcj9ACUVRY7eZWxQW5S452kEY0hjjgVWkK7fqA21Iih35iuzXQb12_aQy8d39iZofYDy8EFbFcGB_PspIDZeYC7Tblw0wPNCM8pLww_5om0BoccRhxORtrlK_TfjMcQKUopmbOyxabsachYK0JtxPX3TXmYWhhl5VqEz5fxyIx9fCv7Mh9CJ7jzxHG-7KiSFCqQaGBaS15TAsKLefqyZNlnJ72Owcg5e-sFm6UM"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-xl font-bold">Avery Rose</h4>
+<p class="text-on-surface/60 font-medium">Operations Lead</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Confident man in a professional workspace, wearing glasses and a clean white t-shirt, looking directly into the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNDaOBoPEZKU7H_4pszLKe36PzNnctOgHH-1zQGbtSRRkKspGuB4ACm-wNZmj-UaUUFBREtvIlVHwwzlNZHiUgTF5t_7PKVcaWVgQyrs4Io0rIcR3I43gGzlxCcER-aKZTdkKWwI1r9uv5VZ1RKQ5tapoeiIByIWWNWr6hf1bB52-wlCkaET2NFEozAoEkIMu_NofRnXXwUoibQMPtr3WqAU_ZkOU5MNNhJUIzJzMriVfDJHXTtBBjtPnqG1f6AHj853x436yKetY"/>
+<div class="absolute inset-0 bg-tertiary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-xl font-bold">Marcus Thorne</h4>
+<p class="text-on-surface/60 font-medium">Safety Specialist</p>
+</div>
+<!-- Team Member 4 -->
+<div class="group">
+<div class="aspect-[4/5] rounded-xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern professional woman with a welcoming expression, wearing a stylish navy blue dress in a brightly lit architectural space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADc7uBtgrvC4-Yk0JbHrLcDZHs27zDxrR9PmVcx2nvvJ-HpdF9BiUDzb7gZeEhfqPAH3H7GKRjGppUpcGNXwLRfeEz6sBb8oQyQaB2QMAPae0Py0fN8sSIcyXjbIfGP6_vauCuX1Gmh16eSGZVqatN0a9es4jpL5rmj2KcsZIagA30sd07d8KaIauyifzu82qPDsohESGns739yD5GU7gXUeqVuNxutWQBUNL2Jn8VcQ6fmrkEQ19Fa50PA1e_PeJSmwVLqvJ2zEw"/>
+<div class="absolute inset-0 bg-on-surface-variant/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<h4 class="text-xl font-bold">Elena Vance</h4>
+<p class="text-on-surface/60 font-medium">Events Coordinator</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-pink-50 dark:bg-slate-950 full-width rounded-t-[3rem] mt-20 tonal shift using surface-container-low flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<span class="text-xl font-extrabold text-pink-600 dark:text-pink-400 font-['Plus_Jakarta_Sans']">Amery Party Packs</span>
+<p class="font-['Plus_Jakarta_Sans'] text-sm leading-relaxed mt-2 opacity-60">© 2024 Amery Party Packs. Crafted with Joy.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-300 transition-colors font-['Plus_Jakarta_Sans'] text-sm leading-relaxed" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-300 transition-colors font-['Plus_Jakarta_Sans'] text-sm leading-relaxed" href="#">TikTok</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-300 transition-colors font-['Plus_Jakarta_Sans'] text-sm leading-relaxed" href="#">Facebook</a>
+</div>
+</div>
+</footer>
+</body></html>
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Icons -->
+<div style="display:flex; align-items:center; gap:20px; margin-top:5px;">
+
+  <!-- Email -->
+  <a href="mailto:amerypartypacks@gmail.com" style="color:#fff; font-size:26px;">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/amerypartypacks" target="_blank" style="color:#fff; font-size:26px;">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@amerypartypacks" target="_blank" style="color:#fff; font-size:26px;">
+    <i class="fab fa-tiktok"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com" target="_blank" style="color:#fff; font-size:26px;">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+</div>
