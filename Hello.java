@@ -270,14 +270,19 @@ class Hello {
         System.out.println(name2.isBlank());
        
         
-        StringBuffer sb = new StringBuffer("Rose Marvelous");
+        //STRING BUFFER
 
+        StringBuffer sb = new StringBuffer("Rose Marvelous");
         System.out.println(sb.capacity());
         System.out.println(sb.charAt(9));
         System.out.println(sb.length());
         System.out.println(sb.substring(3, 9));
         System.out.println(sb.append(2.555f));
 
+        // STRING BUILDER
+        StringBuilder stringbuild = new StringBuilder("rose") ;
+
+        System.out.println(stringbuild.capacity());
 
     }
 
