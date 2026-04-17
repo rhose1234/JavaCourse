@@ -1,6 +1,8 @@
 //CLASS CREATION
 class Calculator{
 
+    int age = 20;
+
     public int add(int n1, int n2){
 
         int r = n1+n2;
@@ -10,9 +12,65 @@ class Calculator{
 
 
 
+class Mobile {
+
+    String brand; 
+    int price;
+    static String name = "smart";
+
+    //CONSTRUCTORS - Used to assign value to an instance variable instead of creating objects
+    public Mobile(){
+        brand = "Apple";
+        price = 150;
+
+        //But we can't have this here cause it would keep running when the constructor is clled, hence we can use a block called static
+        name = "SmartTab";
+    
+    }
+
+    // STATIC BLOCKS - Used to assign value to a static variable 
+    static{
+        name = "SmartTab";
+    }
+
+    public void show(){
+        System.out.println("name : " + name + " brand : " + brand + "price : " + price);
+    }
+
+}
+
+
 class Hello {
 
     public static void main(String arg[]) {
+
+//STATIC BLOCKS 
+Mobile mob1 = new Mobile();
+
+    mob1.brand = "Apple";
+    mob1.price = 1800;
+
+
+//STATIC VARIBLES & METHODS
+    // Mobile mob1 = new Mobile();
+
+    // mob1.brand = "Apple";
+    // mob1.price = 1800;
+   
+    // Mobile mob2 = new Mobile();
+    // mob2.brand = "Samsung";
+    // mob2.price = 100;
+
+    // Mobile mob3 = new Mobile();
+    // mob3.brand = "Nokia";
+    // mob3.price = 400;
+   
+
+    // mob1.show();
+    // mob2.show();
+    // mob3.show();
+     
+
 
         // Array of objects
         // Student s1 = new Student();
@@ -250,39 +308,44 @@ class Hello {
 
         //STRINGS -> when you assign value to a string a space is created in heap memory automatically
 
-        String name = new String("Rose Marvelous");
+        // String name = new String("Rose Marvelous");
 
-        String name2 = "Imisioluwa";
+        // String name2 = "Imisioluwa";
 
-        System.out.println(" Hello " + name );
-        System.out.println(name2.charAt(3));
-        System.out.println(name.codePointAt(3));
-        System.out.println(name.codePointBefore(3));
-        System.out.println(name2.compareTo(name));
-        System.out.println(name.compareToIgnoreCase("Yes"));
-        System.out.println(name.concat(" is a girl"));
-        System.out.println(name.contains("Ro"));
-        System.out.println(name.contentEquals(name2));
-        System.out.println(name.endsWith("s"));
-        System.out.println(name.equals(name2));
-        System.out.println(name2.hashCode());
-        System.out.println(name2.indexOf("o"));
-        System.out.println(name2.isBlank());
+        // System.out.println(" Hello " + name );
+        // System.out.println(name2.charAt(3));
+        // System.out.println(name.codePointAt(3));
+        // System.out.println(name.codePointBefore(3));
+        // System.out.println(name2.compareTo(name));
+        // System.out.println(name.compareToIgnoreCase("Yes"));
+        // System.out.println(name.concat(" is a girl"));
+        // System.out.println(name.contains("Ro"));
+        // System.out.println(name.contentEquals(name2));
+        // System.out.println(name.endsWith("s"));
+        // System.out.println(name.equals(name2));
+        // System.out.println(name2.hashCode());
+        // System.out.println(name2.indexOf("o"));
+        // System.out.println(name2.isBlank());
        
         
         //STRING BUFFER
 
-        StringBuffer sb = new StringBuffer("Rose Marvelous");
-        System.out.println(sb.capacity());
-        System.out.println(sb.charAt(9));
-        System.out.println(sb.length());
-        System.out.println(sb.substring(3, 9));
-        System.out.println(sb.append(2.555f));
+        // StringBuffer sb = new StringBuffer("Rose Marvelous");
+        // System.out.println(sb.capacity());
+        // System.out.println(sb.charAt(9));
+        // System.out.println(sb.length());
+        // System.out.println(sb.substring(3, 9));
+        // System.out.println(sb.append(2.555f));
 
-        // STRING BUILDER
-        StringBuilder stringbuild = new StringBuilder("rose") ;
+        // // STRING BUILDER
+        // StringBuilder stringbuild = new StringBuilder("rose") ;
 
-        System.out.println(stringbuild.capacity());
+        // System.out.println(stringbuild.capacity());
+
+
+
+
+        
 
     }
 
