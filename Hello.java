@@ -1,54 +1,75 @@
 //CLASS CREATION
-class Calculator{
+// class Calculator{
 
-    int age = 20;
+//     int age = 20;
 
-    public int add(int n1, int n2){
+//     public int add(int n1, int n2){
 
-        int r = n1+n2;
-        return r;
-    }
-}
+//         int r = n1+n2;
+//         return r;
+//     }
+// }
 
+// class Mobile {
 
+//     String brand; 
+//     int price;
+//     static String name = "smart";
 
-class Mobile {
+//     //CONSTRUCTORS - Used to assign value to an instance variable instead of creating objects
+//     public Mobile(){
+//         brand = "Apple";
+//         price = 150;
 
-    String brand; 
-    int price;
-    static String name = "smart";
-
-    //CONSTRUCTORS - Used to assign value to an instance variable instead of creating objects
-    public Mobile(){
-        brand = "Apple";
-        price = 150;
-
-        //But we can't have this here cause it would keep running when the constructor is clled, hence we can use a block called static
-        name = "SmartTab";
+//         //But we can't have this here cause it would keep running when the constructor is clled, hence we can use a block called static
+//         name = "SmartTab";
     
-    }
+//     }
 
-    // STATIC BLOCKS - Used to assign value to a static variable 
-    static{
-        name = "SmartTab";
-    }
+//     // STATIC BLOCKS - Used to assign value to a static variable 
+//     static{
+//         name = "SmartTab";
+//     }
 
-    public void show(){
-        System.out.println("name : " + name + " brand : " + brand + "price : " + price);
-    }
+//     public void show(){
+//         System.out.println("name : " + name + " brand : " + brand + "price : " + price);
+//     }
 
+// }
+
+class Human{
+
+    //Encapsulation
+    private int age  = 17;
+    String name ;
+    String course;
+
+    public int getAge(){
+        return age;
+    }
 }
 
 
 class Hello {
 
-    public static void main(String arg[]) {
+    public static void main(String arg[]) { 
+
+        Human person1 = new Human();
+        
+        person1.getAge();
+        // person1.age = 17;
+        person1.course = "computer science";
+        person1.name = "Rose Marvelous";
+
+        System.out.println(person1.getAge());
+
+
 
 //STATIC BLOCKS 
-Mobile mob1 = new Mobile();
+// Mobile mob1 = new Mobile();
 
-    mob1.brand = "Apple";
-    mob1.price = 1800;
+//     mob1.brand = "Apple";
+//     mob1.price = 1800;
 
 
 //STATIC VARIBLES & METHODS
