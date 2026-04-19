@@ -55,6 +55,8 @@ class Human{
     }
 
     //Setter
+  //this keyword - represents the current object the methos is declared in
+
     public void setName(String name){
         this.name = name;
     }
