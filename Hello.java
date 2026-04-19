@@ -41,12 +41,31 @@ class Human{
 
     //Encapsulation
     private int age  = 17;
-    String name ;
+    String name = "rose" ;
     String course;
 
+    //Getters
     public int getAge(){
         return age;
     }
+
+    //Setters
+    public void setAge(int age){
+    this.age = age;
+    }
+
+    //Setter
+    public void setName(String name){
+        this.name = name;
+    }
+
+    //getter
+    public String getName(){
+        return name;
+    }
+   
+
+    
 }
 
 
@@ -57,11 +76,14 @@ class Hello {
         Human person1 = new Human();
         
         person1.getAge();
+        person1.setAge(20);
+        person1.setName("Marv");
         // person1.age = 17;
         person1.course = "computer science";
         person1.name = "Rose Marvelous";
 
-        System.out.println(person1.getAge());
+        System.out.println(person1.getAge() + person1.getName());
+
 
 
 
