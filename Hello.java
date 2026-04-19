@@ -96,7 +96,8 @@ class Hello {
         
         // person1.getAge();
 
-        new Human().name;
+        //Anonymous Object
+        new Human();
         // person1.setAge(20);
         // person1.setName("Marv");
         // person1.age = 17;
