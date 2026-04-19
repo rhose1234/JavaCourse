@@ -48,14 +48,14 @@ class Human{
     public Human(){
         this.age =50;
         this.name = "Sophia";
-        System.out.println("in the constructor");
+        System.out.println("in the object");
     }
 
     //Parameterized Constructor
-    public Human(int a, String n){
-        this.age = a;
-        this.name = n;
-    }
+    // public Human(int a, String n){
+    //     this.age = a;
+    //     this.name = n;
+    // }
 
     //Getters
     public int getAge(){
@@ -89,12 +89,14 @@ class Hello {
     public static void main(String arg[]) { 
 
         //Default Constructor Initialization
-        Human person1 = new Human();
+        // Human person1 = new Human();
 
         //Parameterized Constructor Initialization
-        Human person2 = new Human(10, "Rose");
+        // Human person2 = new Human(10, "Rose");
         
-        person1.getAge();
+        // person1.getAge();
+
+        new Human().name;
         // person1.setAge(20);
         // person1.setName("Marv");
         // person1.age = 17;
@@ -102,9 +104,9 @@ class Hello {
         // person1.name = "Rose Marvelous";
 
         //Printing out Default Constructor 
-        System.out.println(person1.getAge() + ":" + person1.getName());
-         //Printing out Parameterized Constructor 
-        System.out.println(person2.getAge() + ":" + person2.getName());
+        // System.out.println(person1.getAge() + ":" + person1.getName());
+        //  //Printing out Parameterized Constructor 
+        // System.out.println(person2.getAge() + ":" + person2.getName());
 
 
 
