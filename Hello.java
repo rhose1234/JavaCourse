@@ -37,57 +37,81 @@
 
 // }
 
-class Human{
+// class Human{
 
-    //Encapsulation
-    private int age  = 17;
-    String name = "rose" ;
-    String course;
+//     //Encapsulation
+//     private int age  = 17;
+//     String name = "rose" ;
+//     String course;
 
-    // Default Constructor
-    public Human(){
-        this.age =50;
-        this.name = "Sophia";
-        System.out.println("in the object");
-    }
+//     // Default Constructor
+//     public Human(){
+//         this.age =50;
+//         this.name = "Sophia";
+//         System.out.println("in the object");
+//     }
 
-    //Parameterized Constructor
-    // public Human(int a, String n){
-    //     this.age = a;
-    //     this.name = n;
-    // }
+//     //Parameterized Constructor
+//     // public Human(int a, String n){
+//     //     this.age = a;
+//     //     this.name = n;
+//     // }
 
-    //Getters
-    public int getAge(){
-        return age;
-    }
+//     //Getters
+//     public int getAge(){
+//         return age;
+//     }
 
-    //Setters
-    public void setAge(int age){
-    this.age = age;
-    }
+//     //Setters
+//     public void setAge(int age){
+//     this.age = age;
+//     }
 
-    //Setter
-  //this keyword - represents the current object the methos is declared in
+//     //Setter
+//   //this keyword - represents the current object the methos is declared in
 
-    public void setName(String name){
-        this.name = name;
-    }
+//     public void setName(String name){
+//         this.name = name;
+//     }
 
-    //getter
-    public String getName(){
-        return name;
-    }
+//     //getter
+//     public String getName(){
+//         return name;
+//     }
    
 
     
-}
+// }
 
 
 class Hello {
 
     public static void main(String arg[]) { 
+    // object creation
+        Calc perform = new Calc();
+        int s1 = perform.add(10, 20);
+        int s2 = perform.sub(5, 10);
 
+        System.out.println("Sum Addition : " + s1 + " and " + "Sum Subtraction : " + s2);
+
+        // single inheritabce class object
+        AdvCalc advcalc = new AdvCalc();
+        int r1 = advcalc.add(3, 3);
+        int r2 = advcalc.sub(20, 80);
+        int r3 = advcalc.divide(11, 10);
+        int r4 = advcalc.multiply(10, 0);
+
+        System.out.println(r1 + " " +  r2 + " " + r3  + " " + r4);
+
+        // multi level inheritance class object
+        VeryAdvCalc scientific = new VeryAdvCalc();
+        int t1 = scientific.add(2, 5);
+        int t2 = scientific.sub(3, 4);
+        int t3 = scientific.divide(10, 2);
+        int t4 = scientific.multiply(10, -1);
+        double t5 = scientific.power(5, 2);
+
+        System.out.println(t1 + " " + t2 + " " + t3 + " " + t4 + " " + t5);
         //Default Constructor Initialization
         // Human person1 = new Human();
 
@@ -97,7 +121,7 @@ class Hello {
         // person1.getAge();
 
         //Anonymous Object
-        new Human();
+        // new Human();
         // person1.setAge(20);
         // person1.setName("Marv");
         // person1.age = 17;
