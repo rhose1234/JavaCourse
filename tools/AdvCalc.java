@@ -1,4 +1,7 @@
+package tools;
 // Single Ihneritance in java
+
+
 public class AdvCalc extends Calc {
     
     public int multiply (int n1, int  n2){

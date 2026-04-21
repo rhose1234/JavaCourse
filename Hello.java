@@ -83,6 +83,13 @@
     
 // }
 
+//Importing all the classes at once
+import tools.*;
+
+//Manually importing all the classes
+// import tools.AdvCalc;
+// import tools.Calc;
+// import tools.VeryAdvCalc;
 
 class Hello {
 
@@ -114,7 +121,7 @@ class Hello {
         System.out.println(t1 + " " + t2 + " " + t3 + " " + t4 + " " + t5);
         //Default Constructor Initialization
         // Human person1 = new Human();
-        
+
 
         //Parameterized Constructor Initialization
         // Human person2 = new Human(10, "Rose");
