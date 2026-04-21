@@ -84,41 +84,73 @@
 // }
 
 //Importing all the classes at once
-import tools.*;
+// import tools.*;
 
 //Manually importing all the classes
 // import tools.AdvCalc;
 // import tools.Calc;
 // import tools.VeryAdvCalc;
 
+class A {
+
+    public void show(){
+        System.out.println("Showing from class A");
+    }
+}
+class B extends A{
+
+    public void show(){
+        System.out.println("Showing from class B");
+    }
+}
+class C extends B{
+    public void show(){
+        System.out.println("Showing from class C");
+    }
+}
 class Hello {
 
     public static void main(String arg[]) { 
-    // object creation
-        Calc perform = new Calc();
-        int s1 = perform.add(10, 20);
-        int s2 = perform.sub(5, 10);
 
-        System.out.println("Sum Addition : " + s1 + " and " + "Sum Subtraction : " + s2);
+        A obj = new A();
+        obj.show();
+
+
+// Dynamic method dispatch
+        A obj1 = new B();
+        obj1.show();
+
+        B obj2 = new C();
+        obj2.show();
+
+        A obj3 = new C();
+        obj3.show();
+
+    // object creation
+        // Calc perform = new Calc();
+        // int s1 = perform.add(10, 20);
+        // int s2 = perform.sub(5, 10);
+
+        // System.out.println("Sum Addition : " + s1 + " and " + "Sum Subtraction : " + s2);
 
         // single inheritabce class object
-        AdvCalc advcalc = new AdvCalc();
-        int r1 = advcalc.add(3, 3);
-        int r2 = advcalc.sub(20, 80);
-        int r3 = advcalc.divide(11, 10);
-        int r4 = advcalc.multiply(10, 0);
+        // AdvCalc advcalc = new AdvCalc();
+        // int r1 = advcalc.add(3, 3);
+        // int r2 = advcalc.sub(20, 80);
+        // int r3 = advcalc.divide(11, 10);
+        // int r4 = advcalc.multiply(10, 0);
 
-        System.out.println(r1 + " " +  r2 + " " + r3  + " " + r4);
+        // System.out.println(r1 + " " +  r2 + " " + r3  + " " + r4);
 
         // multi level inheritance class object
-        VeryAdvCalc scientific = new VeryAdvCalc();
-        int t1 = scientific.add(2, 5);
-        int t2 = scientific.sub(3, 4);
-        int t3 = scientific.divide(10, 2);
-        int t4 = scientific.multiply(10, -1);
-        double t5 = scientific.power(5, 2);
+        // VeryAdvCalc scientific = new VeryAdvCalc();
+        // int t1 = scientific.add(2, 5);
+        // int t2 = scientific.sub(3, 4);
+        // int t3 = scientific.divide(10, 2);
+        // int t4 = scientific.multiply(10, -1);
+        // double t5 = scientific.power(5, 2);
 
-        System.out.println(t1 + " " + t2 + " " + t3 + " " + t4 + " " + t5);
+        // System.out.println(t1 + " " + t2 + " " + t3 + " " + t4 + " " + t5);
         //Default Constructor Initialization
         // Human person1 = new Human();
 
