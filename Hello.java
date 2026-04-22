@@ -112,9 +112,11 @@ class B {
     }
 }
 class C extends B{
-    public void show(){
-        System.out.println("Showing from class C");
-    }
+
+    // //You cannot overrride show because it is a final method
+    // public void show(){
+    //     System.out.println("Showing from class C");
+    // }
 }
 class Hello {
 
