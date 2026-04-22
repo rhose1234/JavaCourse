@@ -91,15 +91,23 @@
 // import tools.Calc;
 // import tools.VeryAdvCalc;
 
-class A {
+// - Final Class :: Does not allow inheritance(extends)
+final class A {
+
+   final int num1 = 10;
+
+    
 
     public void show(){
         System.out.println("Showing from class A");
     }
 }
-class B extends A{
 
-    public void show(){
+//You can't extend class A here because it is a final classs and it has the final keyword
+class B {
+
+    //Final-Method : You cannot Ovveride a final method in another class it is extended to
+    final public void show(){
         System.out.println("Showing from class B");
     }
 }
@@ -114,6 +122,9 @@ class Hello {
 
         A obj = new A();
         obj.show();
+        // Final Variable :: The Variable num1 from class a has a final keyword, hence it cannot be reassigned.
+        // obj.num1 = 20;
+        System.out.println(obj.num1);
 
 
 // Dynamic method dispatch
